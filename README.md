@@ -59,7 +59,7 @@ IMPORTANT NOTE:
 
 1. This simulator does not currently implement the official “Mata Pelajaran Tambahan” (Additional Subject) requirement, where candidates registering for 11 or 12 subjects must take at least one additional subject.
 
-2. The simulator currently only supports two states/territories when selecting examination centres, and each state contains only five randomly selected schools. The school selections were entirely fictional/random and were included solely for simulation purposes.
+2. The simulator currently only supports two states/territories when selecting examination centres, and each state contains only five randomly selected schools. The school selections were entirely random and were included solely for simulation purposes.
 
 3. Candidate information is stored locally using a JSON file-based database system. This simulator does not use a real encrypted production database and should not be considered secure for handling actual personal information.
 
