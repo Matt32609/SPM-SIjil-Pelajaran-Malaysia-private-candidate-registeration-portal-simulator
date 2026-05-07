@@ -73,6 +73,8 @@ IMPORTANT NOTE:
 
 7. The project was designed to simulate the overall workflow and structure of an examination registration portal rather than perfectly replicate the official Malaysian SPM registration system.
 
+8. This simulator only supports the Malay (Bahasa Malaysia) language to realistically simulate the original workflow of the registeration process.
+
 ---------------------------------------------
 To use this simulator:
 -------------------------------------------
