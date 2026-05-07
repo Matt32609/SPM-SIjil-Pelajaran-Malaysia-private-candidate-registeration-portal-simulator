@@ -26,13 +26,13 @@ Key features of the code:
 
 - One of the most complex parts of the simulator is the subject validation engine. I implemented logical restrictions that prevent candidates from selecting conflicting subjects simultaneously. For example:
 
-(a) Science (1511) and Physics (4531) cannot be registered together.
+* (a) Science (1511) and Physics (4531) cannot be registered together.
 
-(b) Pendidikan Islam (Islamic Studies --- 1223) and Pendidikan Moral (Moral Studies --- 1225) cannot be taken together under certain conditions.
+* (b) Pendidikan Islam (Islamic Studies --- 1223) and Pendidikan Moral (Moral Studies --- 1225) cannot be taken together under certain conditions.
 
-(c) Sains Tulen (Pure Science) combinations are strictly controlled.
+* (c) Sains Tulen (Pure Science) combinations are strictly controlled.
 
-(d) Maximum and minimum subject registration limits are enforced automatically.
+* (d) Maximum and minimum subject registration limits are enforced automatically.
 
 
 This rule-based system simulates real-world examination registration policies while demonstrating complex conditional programming and logical validation techniques.
@@ -85,7 +85,8 @@ OR
 ----------------------------------------
 Image Demonstration:
 ------------------------------
-<img width="1920" height="1040" alt="pendaftaran_spm json - Visual Studio Code 06_05_2026 13_44_32" src="https://github.com/user-attachments/assets/d631af73-6c95-41a5-a844-873919f2f06a" />
+<img width="1920" height="1040" alt="pendaftaran_spm json - Visual Studio Code 07_05_2026 21_22_51" src="https://github.com/user-attachments/assets/a99f6f6f-5230-48a1-a043-2dfc75bf5133" />
+
 <img width="562" height="338" alt="MINGW64__c_Users_Matthew Kam_Desktop_R 07_05_2026 21_24_07" src="https://github.com/user-attachments/assets/a25cd85c-39ea-4f11-8025-a61f38d37945" />
 <img width="562" height="338" alt="MINGW64__c_Users_Matthew Kam_Desktop_R 07_05_2026 21_22_09" src="https://github.com/user-attachments/assets/af653062-1aa1-436e-b983-d794908d18ec" />
 
