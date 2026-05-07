@@ -195,7 +195,7 @@ def calon_mengulang_pendaftaran(kp):
                 print("Pilihan agama yang tidak sah.")
                 return bahasa_malaysia()
             
-            alamat = str(input("Sila masukkan alamat anda.")).strip().upper()
+            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar dan negeri)")).strip().upper()
             if len(alamat) == 0:
                 print("Alamat yang tidak sah.")
                 return bahasa_malaysia()
@@ -262,7 +262,7 @@ def calon_baharu_pendaftaran(kp):
                 print("Pilihan agama yang tidak sah.")
                 return bahasa_malaysia()
             
-            alamat = str(input("Sila masukkan alamat anda.")).strip().upper()
+            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar dan negeri)")).strip().upper()
             if len(alamat) == 0:
                 print("Alamat yang tidak sah.")
                 return bahasa_malaysia()
@@ -614,6 +614,7 @@ def bayaran(kp, surat_anak, mata_pelajaran_input, raw_digit, senarai_pilihan, ju
         subject_price = sum(pilihan_MP_input[d][2] for d in senarai_pilihan)
         summation_total = 20.00 + subject_price
         print(f"Jumlah bayaran: RM{summation_total:.2f}")
+        print("Jumlah bayaran termasuk yuran asas sebanyak RM20.00.")
 
         data_pendaftaran = {"nama": nama_calon, "alamat": alamat, "bandar / negeri" : negeri_dan_bandar, "poskod": poskod, "pusat": pusat_peperiksaan, "subjek": [pilihan_MP_input[d][1] for d in senarai_pilihan], "bayaran": f"RM{summation_total:.2f}", "tarikh": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "kp": kp, "nombor surat beranak": surat_anak, "Telefon": telefon, "Jantina": jantina_dipilih, "Agama": agama_dipilih, "Kaum": kaum_dipilih}
 
