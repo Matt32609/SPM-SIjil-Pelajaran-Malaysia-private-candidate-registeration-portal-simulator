@@ -26,13 +26,13 @@ Key features of the code:
 
 - One of the most complex parts of the simulator is the subject validation engine. I implemented logical restrictions that prevent candidates from selecting conflicting subjects simultaneously. For example:
 
-* (a) Science (1511) and Physics (4531) cannot be registered together.
+** (a) Science (1511) and Physics (4531) cannot be registered together.
 
-* (b) Pendidikan Islam (Islamic Studies --- 1223) and Pendidikan Moral (Moral Studies --- 1225) cannot be taken together under certain conditions.
+** (b) Pendidikan Islam (Islamic Studies --- 1223) and Pendidikan Moral (Moral Studies --- 1225) cannot be taken together under certain conditions.
 
-* (c) Sains Tulen (Pure Science) combinations are strictly controlled.
+** (c) Sains Tulen (Pure Science) combinations are strictly controlled.
 
-* (d) Maximum and minimum subject registration limits are enforced automatically.
+** (d) Maximum and minimum subject registration limits are enforced automatically.
 
 
 This rule-based system simulates real-world examination registration policies while demonstrating complex conditional programming and logical validation techniques.
