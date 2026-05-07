@@ -320,7 +320,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
             27: ["9216", "Kesusasteraan Cina", 10.50],
             28: ["9217", "Kesusasteraan Tamil", 10.50],
             29: ["9221", "Bible Knowledge", 10.50],
-            30: ["9378", "Bahasa Punjabi", 12.00]
+            30: ["9378", "Bahasa Punjabi", 10.50]
         }
  
         while True:
@@ -353,7 +353,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
             print("(27) --- 9216 Kesusasteraan Cina (RM10.50)")
             print("(28) --- 9217 Kesusasteraan Tamil (RM10.50)")
             print("(29) --- 9221 Bible Knowledge (RM10.50)")
-            print("(30) --- 9378 Bahasa Punjabi (RM12)")
+            print("(30) --- 9378 Bahasa Punjabi (RM10.5)")
             mata_pelajaran_input = input("Sila pilih mata pelajaran anda dengan masukkan digit antara julat 1 hingga 30. Tekan butang 'Enter' untuk keluar ke menu utama. Contoh masukkan: 1 , 2 , 3(ATAU)4 , 5 , 6 , 7")
             raw_digit = re.findall(r'\d+', mata_pelajaran_input)
             senarai_pilihan = list(set([int(d)for d in raw_digit]))
@@ -443,7 +443,7 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
             27: ["9216", "Kesusasteraan Cina", 10.50],
             28: ["9217", "Kesusasteraan Tamil", 10.50],
             29: ["9221", "Bible Knowledge", 10.50],
-            30: ["9378", "Bahasa Punjabi", 12.00]
+            30: ["9378", "Bahasa Punjabi", 10.50]
         }
  
         while True:
@@ -476,7 +476,7 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
             print("(27) --- 9216 Kesusasteraan Cina (RM10.50)")
             print("(28) --- 9217 Kesusasteraan Tamil (RM10.50)")
             print("(29) --- 9221 Bible Knowledge (RM10.50)")
-            print("(30) --- 9378 Bahasa Punjabi (RM12)")
+            print("(30) --- 9378 Bahasa Punjabi (RM10.50)")
             mata_pelajaran_input = input("Sila pilih mata pelajaran anda dengan masukkan digit antara julat 1 hingga 30. Tekan butang 'Enter' untuk keluar ke menu utama. Contoh masukkan: 1 , 2 , 3(ATAU)4 , 5 , 6 , 7")
             raw_digit = re.findall(r'\d+', mata_pelajaran_input)
             senarai_pilihan = list(set([int(d)for d in raw_digit]))
