@@ -6,6 +6,7 @@ Simulation of the registeration portal of Sijil Pelajaran Malaysia (SPM) for pri
 A command-line interface (CLI) application built in Python that simulates the official registration portal for private candidates sitting for the Sijil Pelajaran Malaysia (SPM) examination. The simulator replicates a realistic registration workflow—from candidate verification and subject selection to payment calculation and persistent application storage.
 
 This simulator was developed to strengthen my understanding of Python dictionaries, functions, JSON-based databases and structured validation systems. At the same time, the project introduced me to more advanced concepts such as the "re" module.
+
 ---------------------------------------------------------
 Key features of the code:
 -----------------------------------------------------
