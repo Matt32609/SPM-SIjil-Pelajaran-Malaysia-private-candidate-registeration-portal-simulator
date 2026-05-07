@@ -30,7 +30,7 @@ Key features of the code:
 
 ** (b) Pendidikan Islam (Islamic Studies --- 1223) and Pendidikan Moral (Moral Studies --- 1225) cannot be taken together under certain conditions.
 
-** (c) Sains Tulen (Pure Science) combinations are strictly controlled.
+** (c) Mata pelajaran Sains (Science subjects) combinations are strictly controlled.
 
 ** (d) Maximum and minimum subject registration limits are enforced automatically.
 
