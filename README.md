@@ -1,2 +1,3 @@
-# SPM-SIjil-Pelajaran-Malaysia-private-candidate-registeration-portal-simulator
-This project mainly simulates the process of a private candidate registers for the Sijil Pelajaran Malaysia (SPM) examination , a Year 11 high school national examination in Malaysia . The language available for this simulation is only in Malay (Bahasa Malaysia) to simulate the process realistically as seen in the real world.
+SIMULASI PORTAL PENDAFTARAN CALON PERSENDIRIAN SIJIL PELAJARAN MALAYSIA (SPM)
+Simulation of the registeration portal of Sijil Pelajaran Malaysia (SPM) for private candidates
+---------------
