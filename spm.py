@@ -195,7 +195,7 @@ def calon_mengulang_pendaftaran(kp):
                 print("Pilihan agama yang tidak sah.")
                 return bahasa_malaysia()
             
-            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar dan negeri)")).strip().upper()
+            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar, negeri dan poskod)")).strip().upper()
             if len(alamat) == 0:
                 print("Alamat yang tidak sah.")
                 return bahasa_malaysia()
@@ -262,7 +262,7 @@ def calon_baharu_pendaftaran(kp):
                 print("Pilihan agama yang tidak sah.")
                 return bahasa_malaysia()
             
-            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar dan negeri)")).strip().upper()
+            alamat = str(input("Sila masukkan alamat anda. (tanpa bandar, negeri dan poskod)")).strip().upper()
             if len(alamat) == 0:
                 print("Alamat yang tidak sah.")
                 return bahasa_malaysia()
