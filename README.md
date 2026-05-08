@@ -75,7 +75,7 @@ IMPORTANT NOTE:
 
 8. This simulator only supports the Malay (Bahasa Malaysia) language to realistically simulate the original workflow of the registeration process.
 
-9. The simulator currently does not implement the specialized registration protocols for foreign candidates. This includes the omission of the "Kadar Bayaran Warga Asing" (Foreigner Fee Rate), the verification of Student Passes/Visas, and the manual generation of "No. Pengenalan Sementara" (Temporary Identification Numbers) which are required when a standard 12-digit MyKad is unavailable.
+9. The simulator currently does not implement the specialized registration protocols for foreign candidates. This includes the "Kadar Bayaran Warga Asing" (Foreigner Fee Rate), the verification of Student Passes/Visas, and the manual generation of "No. Pengenalan Sementara" (Temporary Identification Numbers) which are required when a standard 12-digit MyKad is unavailable.
 
 ---------------------------------------------
 To use this simulator:
