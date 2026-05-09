@@ -77,6 +77,8 @@ IMPORTANT NOTE:
 
 9. The simulator currently does not implement the specialized registration protocols for foreign candidates. This includes the "Kadar Bayaran Warga Asing" (Foreigner Fee Rate), the verification of Student Passes/Visas, and the manual generation of "No. Pengenalan Sementara" (Temporary Identification Numbers) which are required when a standard 12-digit MyKad is unavailable.
 
+10. The simulator currently does not implement procedures relating to candidates with disabilities (Orang Kurang Upaya).
+
 ---------------------------------------------
 To use this simulator:
 -------------------------------------------
