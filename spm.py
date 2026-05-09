@@ -371,10 +371,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
                 if d not in pilihan_MP_input:
                     print("Pilihan anda tidak sah. Sila pilih semula.")
                     error = True
-
-            if len(senarai_pilihan) < 1:
-                print("SIla pilih sekurang-kurangnya satu(1) mata pelajaran.")
-                error = True
+                    
             if len(senarai_pilihan) > 12:
                 print("Calon hanya dibenarkan untuk mendaftar maksimum 12 mata pelajaran sahaja.")
                 error = True
