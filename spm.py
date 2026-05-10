@@ -394,7 +394,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
                 print("Pilihan anda tidak sah . Sila pilih semula.")
                 continue
         
-            print("(1) Teruskan | (2) Kembali")
+            print("(1) Teruskan | (2) Kembali ke pilihan mata pelajaran")
             print(f"Anda telah memilih {jumlah_dikesan} mata pelajaran . Adakah anda ingin teruskan? Masukkan digit 1 atau 2.")
             confirmation = int(input("Masukkan digit di sini:"))
             if confirmation == 1:
@@ -526,7 +526,7 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
                 print("Pilihan anda tidak sah . Sila pilih semula.")
                 continue
         
-            print("(1) Teruskan | (2) Kembali")
+            print("(1) Teruskan | (2) Kembali ke pilihan mata pelajaran")
             print(f"Anda telah memilih {jumlah_dikesan} mata pelajaran . Adakah anda ingin teruskan? Masukkan digit 1 atau 2.")
             confirmation = int(input("Masukkan digit di sini:"))
             if confirmation == 1:
