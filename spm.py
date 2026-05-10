@@ -371,7 +371,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
                 if d not in pilihan_MP_input:
                     print("Pilihan anda tidak sah. Sila pilih semula.")
                     error = True
-                    
+    
             if len(senarai_pilihan) > 12:
                 print("Calon hanya dibenarkan untuk mendaftar maksimum 12 mata pelajaran sahaja.")
                 error = True
@@ -381,11 +381,17 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
             if 7 in senarai_pilihan and 15 in senarai_pilihan:
                 print("Mata pelajaran Sains (1511) dan Fizik (4531) tidak boleh diambil bersama-sama.")
                 error = True
+            if 3 in senarai_pilihan and 4 in senarai_pilihan:
+                print("Mata pelajaran Pendidikan Islam (1223) dan mata pelajaran Pendidikan Moral (1225) tidak boleh diambil bersama-sama.")
+                error = True
             if 17 in senarai_pilihan and 13 in senarai_pilihan:
                 print("Mata pelajaran Biologi (4551) dan Perniagaan (3666) tidak boleh diambil bersama-sama.")
                 error = True
             if agama_dipilih == "Islam" and 21 in senarai_pilihan:
                 print("Mata pelajaran Pendidikan Islam (1223) dan mata pelajaran Pendidikan Syariah Islamiah (5228) tidak boleh diambil bersama-sama .")
+                error = True
+            if 7 in senarai_pilihan and jumlah_sains_tulen >= 2:
+                print("Mata pelajaran Sains (1511) tidak boleh diambil dengan Dua(2) atau lebih mata pelajaran Sains Tulen.")
                 error = True
             if 16 in senarai_pilihan and 18 in senarai_pilihan:
                 print("Mata pelajaran Kimia (4541) dan Sains Tambahan (18) tidak boleh diaambil bersama-sama. ")
@@ -486,26 +492,31 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
             error = False
             sains_tulen = {15, 16, 17, 18}
             jumlah_sains_tulen = len([d for d in senarai_pilihan if d in sains_tulen])
+            mata_pelajaran_wajib = {1, 2, 5, 6}
+            jumlah_mpw = set(senarai_pilihan)
 
             for d in senarai_pilihan:
                 if d not in pilihan_MP_input:
                     print("Pilihan anda tidak sah. Sila pilih semula.")
                     error = True
 
-            if 1 <= len(senarai_pilihan) < 6:
+            if not mata_pelajaran_wajib.issubset(jumlah_mpw):
                 print("Enam(6) mata pelajaran mesti diambil.")
                 error = True
             if len(senarai_pilihan) > 12:
                 print("Calon hanya dibenarkan untuk mendaftar maksimum 12 mata pelajaran sahaja.")
                 error = True
-            if agama_dipilih == "Islam" and 4 in senarai_pilihan:
-                print("Mata pelajaran Pendidikan Islam (1223) dan Pendidikan Moral (1225) tidak boleh diambil bersama-sama.")
+            if agama_dipilih == "Islam" and 3 not in senarai_pilihan:
+                print("Enam(6) mata pelajaran mesti diambil.")
                 error = True
-            if agama_dipilih == "Lain-lain" and 3 in senarai_pilihan:
-                print("Mata pelajaran Pendidikan Islam (1223) dan Pendidikan Moral (1225) tidak boleh diambil bersama-sama.")
+            if agama_dipilih == "Lain-lain" and 4 not in senarai_pilihan:
+                print("Enam(6) mata pelajaran mesti diambil.")
+                error = True
+            if 3 in senarai_pilihan and 4 in senarai_pilihan:
+                print("Mata pelajaran Pendidikan Islam (1223) dan mata pelajaran Pendidikan Moral (1225) tidak boleh diambil bersama-sama.")
                 error = True
             if agama_dipilih == "Lain-lain" and 21 in senarai_pilihan:
-                print("Mata Pelajaran Pendidikan Moral (1225) tidak boleh diambil bersama-sama dengan mata pelajaran Pendidikan Syariah Islamiah (5228)")
+                print("Mata Pelajaran Pendidikan Moral (1225) dan mata pelajaran Pendidikan Syariah Islamiah (5228) tidak boleh diambil bersama-sama.")
                 error = True
             if 7 in senarai_pilihan and 15 in senarai_pilihan:
                 print("Mata pelajaran Sains (1511) dan Fizik (4531) tidak boleh diambil bersama-sama.")
@@ -515,6 +526,9 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
                 error = True
             if 7 in senarai_pilihan and jumlah_sains_tulen >= 2:
                 print("Mata pelajaran Sains (1511) tidak boleh diambil dengan Dua(2) atau lebih mata pelajaran Sains Tulen.")
+                error = True
+            if 7 not in senarai_pilihan and jumlah_sains_tulen < 2:
+                print("Enam(6) mata pelajaran mesti diambil.")
                 error = True
             if agama_dipilih == "Islam" and 21 in senarai_pilihan:
                 print("Mata pelajaran Pendidikan Islam (1223) dan mata pelajaran Pendidikan Syariah Islamiah (5228) tidak boleh diambil bersama-sama .")
