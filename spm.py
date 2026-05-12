@@ -364,7 +364,7 @@ def calon_mengulang_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat
                 return bahasa_malaysia()
         
             error = False
-            sains_tulen = {15, 16, 17, 18}
+            sains_tulen = {15, 16, 17}
             jumlah_sains_tulen = len([d for d in senarai_pilihan if d in sains_tulen])
 
             for d in senarai_pilihan:
@@ -490,7 +490,7 @@ def calon_baharu_pilihan_MP(kp, surat_anak, agama_dipilih, nama_calon, alamat, n
                 return bahasa_malaysia()
         
             error = False
-            sains_tulen = {15, 16, 17, 18}
+            sains_tulen = {15, 16, 17}
             jumlah_sains_tulen = len([d for d in senarai_pilihan if d in sains_tulen])
             mata_pelajaran_wajib = {1, 2, 5, 6}
             jumlah_mpw = set(senarai_pilihan)
